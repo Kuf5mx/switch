@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test Simple</title>
+  <style>
+    body { background: #0d0d0d; color: white; font-family: Arial; padding: 40px; }
+    h1 { color: #d4af37; }
+  </style>
+</head>
+<body>
+  <h1>Test Page - No Reload</h1>
+  <p>Si ves esto y NO se recarga, el problema está en index.html</p>
+  <div id="result"></div>
+  
+  <script>
+    fetch('http://localhost:4567/api/vehicles')
+      .then(r => r.json())
+      .then(v => {
+        document.getElementById('result').innerHTML = 
+          '<p>✅ API funciona: ' + v.length + ' vehículos cargados</p>' +
+          v.map(car => '<p>• ' + car.marca + ' ' + car.modelo + '</p>').join('');
+      })
+      .catch(e => {
+        document.getElementById('result').innerHTML = '<p>❌ Error: ' + e + '</p>';
+      });
+  </script>
+</body>
+</html>

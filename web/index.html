@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VÉLOCITÉ — Luxury Automotive Excellence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="modal-styles.css">
+</head>
+<body>
+
+  <!-- INTRO SPLASH -->
+  <div class="intro-overlay" id="introOverlay">
+    <div class="intro-halo"></div>
+    <div class="intro-logo">
+      <svg width="80" height="80" viewBox="0 0 44 44">
+        <circle cx="22" cy="22" r="20" stroke="currentColor" stroke-width="0.5" fill="none"/>
+        <path d="M18 28 L22 16 L26 28" stroke="currentColor" stroke-width="1.5" fill="none"/>
+      </svg>
+      <span>VÉLOCITÉ</span>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="header-content">
+      <div class="logo">
+        <svg width="44" height="44" viewBox="0 0 44 44">
+          <circle cx="22" cy="22" r="20" stroke="currentColor" stroke-width="0.5" fill="none"/>
+          <path d="M18 28 L22 16 L26 28" stroke="currentColor" stroke-width="1.5" fill="none"/>
+        </svg>
+        <span>VÉLOCITÉ</span>
+      </div>
+      <nav class="nav">
+        <a href="#collection">Models</a>
+        <a href="#contact">Ayuda</a>
+        <button class="cart-icon" id="cartToggle">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M9 2L7.5 5H2L5 20H19L22 5H16.5L15 2H9Z"/>
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>VÉLOCITÉ</h1>
+      <p>Curated Automotive Excellence</p>
+      <a href="#collection" class="hero-cta">Explore Collection</a>
+    </div>
+  </section>
+
+  <section class="collection-gallery" id="collection">
+    <div class="container">
+      <div class="section-intro">
+        <span class="section-label">Our Collection</span>
+        <h2>Exclusive Inventory</h2>
+        <p>Discover our carefully curated selection of the world's most prestigious automobiles</p>
+      </div>
+      <div class="vehicles-grid">
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="contact">
+    <div class="container">
+      <div class="section-intro">
+        <span class="section-label">Centros de atención</span>
+        <h2>Contacto y ayuda</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22 16.92V21A2 2 0 0 1 19.82 23 19.8 19.8 0 0 1 3 6.18 2 2 0 0 1 5 4h4.09a2 2 0 0 1 2 1.72c.12.86.31 1.7.57 2.51a2 2 0 0 1-.45 2.11L9.91 11.09a16 16 0 0 0 3 3l.75-.75a2 2 0 0 1 2.11-.45c.81.26 1.65.45 2.51.57A2 2 0 0 1 22 16.92Z"/>
+            </svg>
+          </div>
+          <h3>Atención</h3>
+          <p>
+            <a href="#">Chat en línea</a><br>
+            <a href="#">WhatsApp</a><br>
+            <a href="#">Preguntas Frecuentes</a><br>
+            <a href="#">Contacto y ayuda</a>
+          </p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M4 4H20V20H4V4Z"/>
+              <path d="M4 7L12 13L20 7"/>
+            </svg>
+          </div>
+          <h3>Explora</h3>
+          <p>
+            <a href="#collection">Modelos</a><br>
+            <a href="#">Compra un auto</a><br>
+            <a href="#">Servicio</a><br>
+            <a href="#">Conoce la marca</a>
+          </p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 21s-6-4.35-6-10a6 6 0 1 1 12 0c0 5.65-6 10-6 10Z"/>
+              <circle cx="12" cy="11" r="2"/>
+            </svg>
+          </div>
+          <h3>Conoce</h3>
+          <p>
+            <a href="#">Pressroom</a><br>
+            <a href="#">Nuestra historia</a><br>
+            <a href="#">Pasión tecnológica</a><br>
+            <a href="#">Seguridad</a><br>
+            <a href="#">Responsabilidad social</a>
+          </p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9 11L12 14L22 4"/>
+              <path d="M21 12V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V5C3 3.9 3.9 3 5 3H16"/>
+            </svg>
+          </div>
+          <h3>Legales</h3>
+          <p>
+            <a href="#">Términos y condiciones</a><br>
+            <a href="#">Aviso de privacidad</a><br>
+            <a href="#">Política de cookies</a><br>
+            <a href="#">Mapa de sitio</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+      <h2>Your Selection</h2>
+      <button class="close-cart" id="cartClose">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6L6 18M6 6L18 18"/>
+        </svg>
+      </button>
+    </div>
+    <div class="cart-items" id="cartItems">
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <span id="cartTotal">$0</span>
+      </div>
+      <button class="btn-checkout" id="checkoutBtn">Complete Purchase</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>

@@ -11,10 +11,14 @@ dependencies {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_21
-    targetCompatibility = JavaVersion.VERSION_21
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
 }
 
 application {
+<<<<<<< Updated upstream
     mainClass = "org.example.App"
+=======
+    mainClass.set("edu.erick.Main")
+>>>>>>> Stashed changes
 }
