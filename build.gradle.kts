@@ -16,5 +16,9 @@ java {
 }
 
 application {
-    mainClass = "org.example.App"
+    mainClass = "erick.switchapp.App"
+}
+
+tasks.named<JavaExec>("run") {
+    standardInput = System.`in`
 }
